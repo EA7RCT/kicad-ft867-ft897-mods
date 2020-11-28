@@ -14,47 +14,164 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L NicerLibrary:C C?
+L NicerLibrary:C C1
 U 1 1 5FC2A013
-P 4450 2900
-F 0 "C?" H 4540 2946 50  0000 L CNN
-F 1 "C" H 4540 2855 50  0000 L CNN
-F 2 "" H 4488 2750 50  0001 C CNN
-F 3 "~" H 4450 2900 50  0001 C CNN
-	1    4450 2900
+P 5500 3250
+F 0 "C1" H 5590 3296 50  0000 L CNN
+F 1 "150p" H 5590 3205 50  0000 L CNN
+F 2 "NicerFootprints:SMD_0805" H 5538 3100 50  0001 C CNN
+F 3 "~" H 5500 3250 50  0001 C CNN
+	1    5500 3250
 	1    0    0    -1  
 $EndComp
 $Comp
-L NicerLibrary:D_Zener D?
+L NicerLibrary:D_Zener D1
 U 1 1 5FC2A634
-P 4900 2850
-F 0 "D?" H 4980 2896 50  0000 L CNN
-F 1 "D_Zener" H 4980 2805 50  0000 L CNN
-F 2 "" V 4900 2850 50  0001 C CNN
-F 3 "~" V 4900 2850 50  0001 C CNN
-	1    4900 2850
-	1    0    0    -1  
+P 4500 3250
+F 0 "D1" H 4300 3200 50  0000 L CNN
+F 1 "BAT85" H 4200 3300 50  0000 L CNN
+F 2 "NicerFootprints:SMD_0805_Polarized" V 4500 3250 50  0001 C CNN
+F 3 "~" V 4500 3250 50  0001 C CNN
+	1    4500 3250
+	-1   0    0    1   
 $EndComp
 $Comp
-L NicerLibrary:D_Zener D?
+L NicerLibrary:D_Zener D2
 U 1 1 5FC2A90D
-P 5350 2850
-F 0 "D?" H 5430 2896 50  0000 L CNN
-F 1 "D_Zener" H 5430 2805 50  0000 L CNN
-F 2 "" V 5350 2850 50  0001 C CNN
-F 3 "~" V 5350 2850 50  0001 C CNN
-	1    5350 2850
+P 5000 3250
+F 0 "D2" H 5080 3296 50  0000 L CNN
+F 1 "BAT85" H 5080 3205 50  0000 L CNN
+F 2 "NicerFootprints:SMD_0805_Polarized" V 5000 3250 50  0001 C CNN
+F 3 "~" V 5000 3250 50  0001 C CNN
+	1    5000 3250
 	1    0    0    -1  
 $EndComp
 $Comp
-L NicerLibrary:R R?
+L NicerLibrary:R R1
 U 1 1 5FC2AF5F
-P 4150 2900
-F 0 "R?" H 4220 2946 50  0000 L CNN
-F 1 "R" H 4220 2855 50  0000 L CNN
-F 2 "" V 4080 2900 50  0001 C CNN
-F 3 "~" H 4150 2900 50  0001 C CNN
-	1    4150 2900
+P 6000 3250
+F 0 "R1" H 5800 3300 50  0000 L CNN
+F 1 "680k" H 5750 3200 50  0000 L CNN
+F 2 "NicerFootprints:SMD_0805" V 5930 3250 50  0001 C CNN
+F 3 "~" H 6000 3250 50  0001 C CNN
+	1    6000 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 3100 4500 3000
+Wire Wire Line
+	4500 3000 5000 3000
+Wire Wire Line
+	6000 3100 6000 3000
+Connection ~ 6000 3000
+Wire Wire Line
+	5500 3100 5500 3000
+Connection ~ 5500 3000
+Wire Wire Line
+	5500 3000 6000 3000
+Wire Wire Line
+	5000 3100 5000 3000
+Connection ~ 5000 3000
+Wire Wire Line
+	5000 3000 5500 3000
+Wire Wire Line
+	4500 3400 4500 3500
+Wire Wire Line
+	4500 3500 5000 3500
+Wire Wire Line
+	6000 3500 6000 3400
+Wire Wire Line
+	5500 3400 5500 3500
+Connection ~ 5500 3500
+Wire Wire Line
+	5500 3500 6000 3500
+Wire Wire Line
+	5000 3400 5000 3500
+Connection ~ 5000 3500
+Wire Wire Line
+	5000 3500 5500 3500
+$Comp
+L Connector:Conn_01x01_Female J1
+U 1 1 5FC39A90
+P 6700 2000
+F 0 "J1" H 6728 2026 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 6728 1935 50  0000 L CNN
+F 2 "" H 6700 2000 50  0001 C CNN
+F 3 "~" H 6700 2000 50  0001 C CNN
+	1    6700 2000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x01_Female J2
+U 1 1 5FC3A28F
+P 6700 3000
+F 0 "J2" H 6728 3026 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 6728 2935 50  0000 L CNN
+F 2 "" H 6700 3000 50  0001 C CNN
+F 3 "~" H 6700 3000 50  0001 C CNN
+	1    6700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J3
+U 1 1 5FC3A848
+P 6700 3500
+F 0 "J3" H 6728 3526 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 6728 3435 50  0000 L CNN
+F 2 "" H 6700 3500 50  0001 C CNN
+F 3 "~" H 6700 3500 50  0001 C CNN
+	1    6700 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3000 6500 3000
+Wire Wire Line
+	6000 3500 6500 3500
+Connection ~ 6000 3500
+Wire Wire Line
+	6000 2000 6500 2000
+$Comp
+L power:Earth #PWR01
+U 1 1 5FC4054A
+P 6500 2000
+F 0 "#PWR01" H 6500 1750 50  0001 C CNN
+F 1 "Earth" H 6500 1850 50  0001 C CNN
+F 2 "" H 6500 2000 50  0001 C CNN
+F 3 "~" H 6500 2000 50  0001 C CNN
+	1    6500 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 2000
+$Comp
+L NicerLibrary:C C2
+U 1 1 5FC2AB32
+P 6000 1750
+F 0 "C2" H 6090 1796 50  0000 L CNN
+F 1 "560p" H 6090 1705 50  0000 L CNN
+F 2 "NicerFootprints:SMD_0805" H 6038 1600 50  0001 C CNN
+F 3 "~" H 6000 1750 50  0001 C CNN
+	1    6000 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1900 6000 2000
+$Comp
+L Connector:Conn_01x01_Female J4
+U 1 1 5FC2B82B
+P 6700 1500
+F 0 "J4" H 6728 1526 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 6728 1435 50  0000 L CNN
+F 2 "" H 6700 1500 50  0001 C CNN
+F 3 "~" H 6700 1500 50  0001 C CNN
+	1    6700 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1500 6000 1500
+Wire Wire Line
+	6000 1500 6000 1600
+Text Notes 5850 1350 0    50   ~ 0
+Parallel with C1502 (Q1118)
+Text Notes 4750 2900 0    50   ~ 0
+Parallel R1420 (Q1118). Remove R1437
 $EndSCHEMATC
